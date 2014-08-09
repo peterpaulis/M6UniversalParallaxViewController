@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0B16C3E1995FF0100B278D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B16C3D1995FF0100B278D2 /* Foundation.framework */; };
+		D0B16C401995FF0100B278D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B16C3F1995FF0100B278D2 /* CoreGraphics.framework */; };
+		D0B16C421995FF0100B278D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B16C411995FF0100B278D2 /* UIKit.framework */; };
+		D0B16C751995FFEB00B278D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16C6E1995FFEB00B278D2 /* AppDelegate.m */; };
+		D0B16C761995FFEB00B278D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0B16C6F1995FFEB00B278D2 /* InfoPlist.strings */; };
+		D0B16C771995FFEB00B278D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B16C711995FFEB00B278D2 /* Images.xcassets */; };
+		D0B16C781995FFEB00B278D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16C721995FFEB00B278D2 /* main.m */; };
+		D0B16C791995FFEB00B278D2 /* Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0B16C731995FFEB00B278D2 /* Sample-Info.plist */; };
+		D0B16C87199600B700B278D2 /* M6UniversalParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16C84199600B700B278D2 /* M6UniversalParallaxViewController.m */; };
+		D0B16C8A1996011E00B278D2 /* M6UniversalParallaxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16C891996011E00B278D2 /* M6UniversalParallaxViewController.xib */; };
+		D0B16C92199609A000B278D2 /* ImageSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16C90199609A000B278D2 /* ImageSampleViewController.m */; };
+		D0B16C93199609A000B278D2 /* ImageSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16C91199609A000B278D2 /* ImageSampleViewController.xib */; };
+		D0B16C96199611B000B278D2 /* M6HeaderInsetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16C95199611B000B278D2 /* M6HeaderInsetTableView.m */; };
+		D0B16C9B1996191300B278D2 /* MapSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16C991996191300B278D2 /* MapSampleViewController.m */; };
+		D0B16C9C1996191300B278D2 /* MapSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16C9A1996191300B278D2 /* MapSampleViewController.xib */; };
+		D0B16C9F19961B7700B278D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B16C9E19961B7700B278D2 /* MapKit.framework */; };
+		D0B16CA319961D9000B278D2 /* PickSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16CA119961D9000B278D2 /* PickSampleViewController.m */; };
+		D0B16CA419961D9000B278D2 /* PickSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16CA219961D9000B278D2 /* PickSampleViewController.xib */; };
+		D0B16CA8199621D200B278D2 /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16CA6199621D200B278D2 /* PagerViewController.m */; };
+		D0B16CA9199621D200B278D2 /* PagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16CA7199621D200B278D2 /* PagerViewController.xib */; };
+		D0B16CAE1996290F00B278D2 /* FancyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16CAC1996290F00B278D2 /* FancyViewController.m */; };
+		D0B16CAF1996290F00B278D2 /* FancyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16CAD1996290F00B278D2 /* FancyViewController.xib */; };
+		D0B16CB7199631BB00B278D2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16CB4199631BB00B278D2 /* UIImage+ImageEffects.m */; };
+		D0B16CBC199644D600B278D2 /* SimpleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B16CBA199644D600B278D2 /* SimpleScrollViewController.m */; };
+		D0B16CBD199644D600B278D2 /* SimpleScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B16CBB199644D600B278D2 /* SimpleScrollViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0B16C3A1995FF0100B278D2 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B16C3D1995FF0100B278D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0B16C3F1995FF0100B278D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0B16C411995FF0100B278D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0B16C561995FF0100B278D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D0B16C6D1995FFEB00B278D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0B16C6E1995FFEB00B278D2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0B16C701995FFEB00B278D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0B16C711995FFEB00B278D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0B16C721995FFEB00B278D2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0B16C731995FFEB00B278D2 /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
+		D0B16C741995FFEB00B278D2 /* Sample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sample-Prefix.pch"; sourceTree = "<group>"; };
+		D0B16C83199600B700B278D2 /* M6UniversalParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M6UniversalParallaxViewController.h; sourceTree = "<group>"; };
+		D0B16C84199600B700B278D2 /* M6UniversalParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M6UniversalParallaxViewController.m; sourceTree = "<group>"; };
+		D0B16C891996011E00B278D2 /* M6UniversalParallaxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M6UniversalParallaxViewController.xib; sourceTree = "<group>"; };
+		D0B16C8F199609A000B278D2 /* ImageSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSampleViewController.h; sourceTree = "<group>"; };
+		D0B16C90199609A000B278D2 /* ImageSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSampleViewController.m; sourceTree = "<group>"; };
+		D0B16C91199609A000B278D2 /* ImageSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageSampleViewController.xib; sourceTree = "<group>"; };
+		D0B16C94199611B000B278D2 /* M6HeaderInsetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M6HeaderInsetTableView.h; sourceTree = "<group>"; };
+		D0B16C95199611B000B278D2 /* M6HeaderInsetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M6HeaderInsetTableView.m; sourceTree = "<group>"; };
+		D0B16C981996191300B278D2 /* MapSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSampleViewController.h; sourceTree = "<group>"; };
+		D0B16C991996191300B278D2 /* MapSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSampleViewController.m; sourceTree = "<group>"; };
+		D0B16C9A1996191300B278D2 /* MapSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapSampleViewController.xib; sourceTree = "<group>"; };
+		D0B16C9E19961B7700B278D2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D0B16CA019961D9000B278D2 /* PickSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickSampleViewController.h; sourceTree = "<group>"; };
+		D0B16CA119961D9000B278D2 /* PickSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickSampleViewController.m; sourceTree = "<group>"; };
+		D0B16CA219961D9000B278D2 /* PickSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickSampleViewController.xib; sourceTree = "<group>"; };
+		D0B16CA5199621D200B278D2 /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
+		D0B16CA6199621D200B278D2 /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
+		D0B16CA7199621D200B278D2 /* PagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewController.xib; sourceTree = "<group>"; };
+		D0B16CAB1996290F00B278D2 /* FancyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FancyViewController.h; sourceTree = "<group>"; };
+		D0B16CAC1996290F00B278D2 /* FancyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FancyViewController.m; sourceTree = "<group>"; };
+		D0B16CAD1996290F00B278D2 /* FancyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FancyViewController.xib; sourceTree = "<group>"; };
+		D0B16CB3199631BB00B278D2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		D0B16CB4199631BB00B278D2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		D0B16CB9199644D600B278D2 /* SimpleScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleScrollViewController.h; sourceTree = "<group>"; };
+		D0B16CBA199644D600B278D2 /* SimpleScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleScrollViewController.m; sourceTree = "<group>"; };
+		D0B16CBB199644D600B278D2 /* SimpleScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleScrollViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0B16C371995FF0100B278D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B16C9F19961B7700B278D2 /* MapKit.framework in Frameworks */,
+				D0B16C401995FF0100B278D2 /* CoreGraphics.framework in Frameworks */,
+				D0B16C421995FF0100B278D2 /* UIKit.framework in Frameworks */,
+				D0B16C3E1995FF0100B278D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0B16C311995FF0100B278D2 = {
+			isa = PBXGroup;
+			children = (
+				D0B16C6C1995FFEB00B278D2 /* Sample */,
+				D0B16C3C1995FF0100B278D2 /* Frameworks */,
+				D0B16C3B1995FF0100B278D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0B16C3B1995FF0100B278D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C3A1995FF0100B278D2 /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B16C3C1995FF0100B278D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C9E19961B7700B278D2 /* MapKit.framework */,
+				D0B16C3D1995FF0100B278D2 /* Foundation.framework */,
+				D0B16C3F1995FF0100B278D2 /* CoreGraphics.framework */,
+				D0B16C411995FF0100B278D2 /* UIKit.framework */,
+				D0B16C561995FF0100B278D2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0B16C6C1995FFEB00B278D2 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C82199600B700B278D2 /* M6UniversalParallaxViewController */,
+				D0B16C6D1995FFEB00B278D2 /* AppDelegate.h */,
+				D0B16C6E1995FFEB00B278D2 /* AppDelegate.m */,
+				D0B16CB119962DAF00B278D2 /* Pick Sample */,
+				D0B16CB01996291500B278D2 /* Fancy */,
+				D0B16CAA199621D600B278D2 /* With Pager */,
+				D0B16C9D1996191800B278D2 /* With Map */,
+				D0B16CBE199644DA00B278D2 /* WithScroll */,
+				D0B16C97199618E100B278D2 /* With Image */,
+				D0B16C7A1996000400B278D2 /* Supporting */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		D0B16C7A1996000400B278D2 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C6F1995FFEB00B278D2 /* InfoPlist.strings */,
+				D0B16C711995FFEB00B278D2 /* Images.xcassets */,
+				D0B16C721995FFEB00B278D2 /* main.m */,
+				D0B16C731995FFEB00B278D2 /* Sample-Info.plist */,
+				D0B16C741995FFEB00B278D2 /* Sample-Prefix.pch */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		D0B16C82199600B700B278D2 /* M6UniversalParallaxViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C83199600B700B278D2 /* M6UniversalParallaxViewController.h */,
+				D0B16C84199600B700B278D2 /* M6UniversalParallaxViewController.m */,
+				D0B16C891996011E00B278D2 /* M6UniversalParallaxViewController.xib */,
+				D0B16C94199611B000B278D2 /* M6HeaderInsetTableView.h */,
+				D0B16C95199611B000B278D2 /* M6HeaderInsetTableView.m */,
+			);
+			name = M6UniversalParallaxViewController;
+			path = ../../M6UniversalParallaxViewController;
+			sourceTree = "<group>";
+		};
+		D0B16C97199618E100B278D2 /* With Image */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C8F199609A000B278D2 /* ImageSampleViewController.h */,
+				D0B16C90199609A000B278D2 /* ImageSampleViewController.m */,
+				D0B16C91199609A000B278D2 /* ImageSampleViewController.xib */,
+			);
+			name = "With Image";
+			sourceTree = "<group>";
+		};
+		D0B16C9D1996191800B278D2 /* With Map */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16C981996191300B278D2 /* MapSampleViewController.h */,
+				D0B16C991996191300B278D2 /* MapSampleViewController.m */,
+				D0B16C9A1996191300B278D2 /* MapSampleViewController.xib */,
+			);
+			name = "With Map";
+			sourceTree = "<group>";
+		};
+		D0B16CAA199621D600B278D2 /* With Pager */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16CA5199621D200B278D2 /* PagerViewController.h */,
+				D0B16CA6199621D200B278D2 /* PagerViewController.m */,
+				D0B16CA7199621D200B278D2 /* PagerViewController.xib */,
+			);
+			name = "With Pager";
+			sourceTree = "<group>";
+		};
+		D0B16CB01996291500B278D2 /* Fancy */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16CB2199631BB00B278D2 /* ImageEffects */,
+				D0B16CAB1996290F00B278D2 /* FancyViewController.h */,
+				D0B16CAC1996290F00B278D2 /* FancyViewController.m */,
+				D0B16CAD1996290F00B278D2 /* FancyViewController.xib */,
+			);
+			name = Fancy;
+			sourceTree = "<group>";
+		};
+		D0B16CB119962DAF00B278D2 /* Pick Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16CA019961D9000B278D2 /* PickSampleViewController.h */,
+				D0B16CA119961D9000B278D2 /* PickSampleViewController.m */,
+				D0B16CA219961D9000B278D2 /* PickSampleViewController.xib */,
+			);
+			name = "Pick Sample";
+			sourceTree = "<group>";
+		};
+		D0B16CB2199631BB00B278D2 /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16CB3199631BB00B278D2 /* UIImage+ImageEffects.h */,
+				D0B16CB4199631BB00B278D2 /* UIImage+ImageEffects.m */,
+			);
+			path = ImageEffects;
+			sourceTree = "<group>";
+		};
+		D0B16CBE199644DA00B278D2 /* WithScroll */ = {
+			isa = PBXGroup;
+			children = (
+				D0B16CB9199644D600B278D2 /* SimpleScrollViewController.h */,
+				D0B16CBA199644D600B278D2 /* SimpleScrollViewController.m */,
+				D0B16CBB199644D600B278D2 /* SimpleScrollViewController.xib */,
+			);
+			name = WithScroll;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0B16C391995FF0100B278D2 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B16C661995FF0100B278D2 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				D0B16C361995FF0100B278D2 /* Sources */,
+				D0B16C371995FF0100B278D2 /* Frameworks */,
+				D0B16C381995FF0100B278D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			productName = M6UniversalParallaxTableViewController;
+			productReference = D0B16C3A1995FF0100B278D2 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0B16C321995FF0100B278D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "min60 s.r.o. - Peter Paulis";
+			};
+			buildConfigurationList = D0B16C351995FF0100B278D2 /* Build configuration list for PBXProject "Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0B16C311995FF0100B278D2;
+			productRefGroup = D0B16C3B1995FF0100B278D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0B16C391995FF0100B278D2 /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0B16C381995FF0100B278D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B16C791995FFEB00B278D2 /* Sample-Info.plist in Resources */,
+				D0B16CA419961D9000B278D2 /* PickSampleViewController.xib in Resources */,
+				D0B16C8A1996011E00B278D2 /* M6UniversalParallaxViewController.xib in Resources */,
+				D0B16C761995FFEB00B278D2 /* InfoPlist.strings in Resources */,
+				D0B16C771995FFEB00B278D2 /* Images.xcassets in Resources */,
+				D0B16C93199609A000B278D2 /* ImageSampleViewController.xib in Resources */,
+				D0B16CAF1996290F00B278D2 /* FancyViewController.xib in Resources */,
+				D0B16CA9199621D200B278D2 /* PagerViewController.xib in Resources */,
+				D0B16C9C1996191300B278D2 /* MapSampleViewController.xib in Resources */,
+				D0B16CBD199644D600B278D2 /* SimpleScrollViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0B16C361995FF0100B278D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B16C92199609A000B278D2 /* ImageSampleViewController.m in Sources */,
+				D0B16C781995FFEB00B278D2 /* main.m in Sources */,
+				D0B16C96199611B000B278D2 /* M6HeaderInsetTableView.m in Sources */,
+				D0B16C9B1996191300B278D2 /* MapSampleViewController.m in Sources */,
+				D0B16C87199600B700B278D2 /* M6UniversalParallaxViewController.m in Sources */,
+				D0B16CA319961D9000B278D2 /* PickSampleViewController.m in Sources */,
+				D0B16CB7199631BB00B278D2 /* UIImage+ImageEffects.m in Sources */,
+				D0B16CAE1996290F00B278D2 /* FancyViewController.m in Sources */,
+				D0B16CA8199621D200B278D2 /* PagerViewController.m in Sources */,
+				D0B16C751995FFEB00B278D2 /* AppDelegate.m in Sources */,
+				D0B16CBC199644D600B278D2 /* SimpleScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0B16C6F1995FFEB00B278D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B16C701995FFEB00B278D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0B16C641995FF0100B278D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0B16C651995FF0100B278D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0B16C671995FF0100B278D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
+				INFOPLIST_FILE = "Sample/Sample-Info.plist";
+				PRODUCT_NAME = Sample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0B16C681995FF0100B278D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
+				INFOPLIST_FILE = "Sample/Sample-Info.plist";
+				PRODUCT_NAME = Sample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0B16C351995FF0100B278D2 /* Build configuration list for PBXProject "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B16C641995FF0100B278D2 /* Debug */,
+				D0B16C651995FF0100B278D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B16C661995FF0100B278D2 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B16C671995FF0100B278D2 /* Debug */,
+				D0B16C681995FF0100B278D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0B16C321995FF0100B278D2 /* Project object */;
+}
