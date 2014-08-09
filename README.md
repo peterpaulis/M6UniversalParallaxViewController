@@ -3,7 +3,7 @@ M6UniversalParallaxViewController
 
 <b>Easy to setup, lightweight and fully customizable component</b>
 
-Fully autolayout, Setup in Interface builder
+Autolayout base, Setup in Interface builder
 
 <a href="http://en.bloggif.com/" title="Photo Editing"><img src="http://data.bloggif.com/distant/user/store/e/e/a/3/e45e4874acb3588f31d187074d893aee.gif" alt="Mounting created Bloggif" width="250" height="448" /></a>
 
