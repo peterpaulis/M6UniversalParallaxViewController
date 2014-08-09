@@ -30,7 +30,7 @@ M6UniversalParallaxViewController
 
 #Credits
 
-min:60 - Building perfect mobile apps, for affordable price - <a href="http://min60.com">http://min60.com</a>
+min:60 - Building your mobile apps - <a href="http://min60.com">http://min60.com</a>
 
 #License
 
