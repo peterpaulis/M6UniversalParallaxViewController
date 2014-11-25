@@ -24,4 +24,8 @@
     
 }
 
+- (void)dealloc{
+    self.scrollView.delegate = nil;
+}
+
 @end
