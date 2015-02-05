@@ -12,7 +12,6 @@
 #import "ImageSampleViewController.h"
 #import "PagerViewController.h"
 #import "FancyViewController.h"
-#import "SimpleScrollViewController.h"
 
 @interface PickSampleViewController ()
 
@@ -73,13 +72,6 @@
 
     FancyViewController * fvc = [FancyViewController new];
     [self.navigationController pushViewController:fvc animated:YES];
-    
-}
-
-- (IBAction)simpleScrollView:(id)sender {
-
-    SimpleScrollViewController * ssvc = [SimpleScrollViewController new];
-    [self.navigationController pushViewController:ssvc animated:YES];
     
 }
 

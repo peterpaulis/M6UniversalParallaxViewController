@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="M6UniversalParallaxViewController">
@@ -9,7 +10,7 @@
                 <outlet property="parallaxContainerView" destination="3CC-T6-Oec" id="pPh-9P-fb9"/>
                 <outlet property="parallaxContainerViewHeightLayoutConstraint" destination="uuc-vw-fWq" id="3HL-xX-ED8"/>
                 <outlet property="parallaxView" destination="HhC-tJ-gbT" id="5du-B3-n73"/>
-                <outlet property="scrollView" destination="xlF-oQ-1fl" id="5ZN-5y-fM0"/>
+                <outlet property="scrollView" destination="26A-2T-NIC" id="zAx-Ds-XaG"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hb5-MQ-zy3"/>
             </connections>
         </placeholder>
@@ -18,21 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlF-oQ-1fl" userLabel="Scroll View or UITableView">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="26A-2T-NIC">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                </scrollView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CC-T6-Oec">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CC-T6-Oec" customClass="M6TouchForwardView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhC-tJ-gbT">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parallax view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt1-E4-tfJ">
                                     <rect key="frame" x="110" y="89" width="101" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
@@ -43,7 +41,6 @@
                                 <constraint firstAttribute="centerX" secondItem="rt1-E4-tfJ" secondAttribute="centerX" id="bgh-xt-low"/>
                                 <constraint firstAttribute="centerY" secondItem="rt1-E4-tfJ" secondAttribute="centerY" constant="0.5" id="vYC-Oe-yOK"/>
                             </constraints>
-                            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,20 +51,26 @@
                         <constraint firstAttribute="height" constant="200" id="uuc-vw-fWq"/>
                         <constraint firstAttribute="trailing" secondItem="HhC-tJ-gbT" secondAttribute="trailing" id="xDZ-3y-Dfg"/>
                     </constraints>
+                    <connections>
+                        <outlet property="forwardView" destination="26A-2T-NIC" id="bdM-02-hNB"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="3CC-T6-Oec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Cj-oU-KLK"/>
-                <constraint firstItem="xlF-oQ-1fl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7AI-xv-PYS"/>
-                <constraint firstAttribute="bottom" secondItem="xlF-oQ-1fl" secondAttribute="bottom" id="7kv-Ng-qgg"/>
-                <constraint firstAttribute="trailing" secondItem="xlF-oQ-1fl" secondAttribute="trailing" id="AaJ-RH-iRl"/>
+                <constraint firstItem="26A-2T-NIC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="B2W-tl-xhB"/>
+                <constraint firstItem="26A-2T-NIC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GKn-2I-yeI"/>
                 <constraint firstAttribute="trailing" secondItem="3CC-T6-Oec" secondAttribute="trailing" id="Ph0-OQ-e2G"/>
+                <constraint firstAttribute="trailing" secondItem="26A-2T-NIC" secondAttribute="trailing" id="PvS-No-QiW"/>
+                <constraint firstAttribute="bottom" secondItem="26A-2T-NIC" secondAttribute="bottom" id="TR5-5L-ZT5"/>
                 <constraint firstItem="3CC-T6-Oec" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rlA-7l-DBV"/>
-                <constraint firstItem="xlF-oQ-1fl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xpY-cn-wdu"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

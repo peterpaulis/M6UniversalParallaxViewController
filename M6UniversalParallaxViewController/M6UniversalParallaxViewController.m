@@ -8,9 +8,6 @@
 
 #import "M6UniversalParallaxViewController.h"
 
-// Classes
-#import "M6HeaderInsetTableView.h"
-
 @interface M6UniversalParallaxViewController ()
 
 @property (nonatomic, assign) CGFloat parallaxViewContainerRestingHeight;
@@ -54,20 +51,31 @@
     _parallaxViewContainerRestingHeight = parallaxViewContainerRestingHeight;
     
     // adjust for new resting height
-    self.scrollView.contentInset = UIEdgeInsetsMake(_parallaxViewContainerRestingHeight, 0, 0, 0);
+    [self createTableHeaderView];
+    
+}
+
+- (void)setMinimumHeight:(CGFloat)minimumHeight {
+    
+    _minimumHeight = minimumHeight;
+    
+    self.scrollView.contentInset = UIEdgeInsetsMake(_minimumHeight, 0, 0, 0);
+    
+    [self createTableHeaderView];
+    
+}
+
+////////////////////////////////////////////////////////////////////////
+#pragma mark - Private
+////////////////////////////////////////////////////////////////////////
+
+- (void)createTableHeaderView {
+    
     if ([self.scrollView isKindOfClass:[UITableView class]]) {
         
-        if ([self.scrollView isKindOfClass:[M6HeaderInsetTableView class]]) {
-            
-            M6HeaderInsetTableView * tableView = (M6HeaderInsetTableView *)self.scrollView;
-            tableView.headerViewInsets = UIEdgeInsetsMake(- self.parallaxViewContainerRestingHeight, 0, 0, 0);
-            
-        } else {
-            
-            NSLog(@"To support section in this tableview, set it's class to M6HeaderInsetTableView");
-            
-        }
-        
+        UITableView * tv = (UITableView *)self.scrollView;
+        UIView * hv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tv.bounds.size.width, self.parallaxViewContainerRestingHeight - self.minimumHeight)];
+        tv.tableHeaderView = hv;
     }
     
 }
@@ -84,9 +92,16 @@
     
     CGFloat y = self.scrollView.contentOffset.y + self.parallaxViewContainerRestingHeight;
     
+    if ([self.scrollView isKindOfClass:[UITableView class]]) {
+     
+        UITableView * tv = (UITableView *)self.scrollView;
+        y -= tv.tableHeaderView.frame.size.height;// + self.scrollView.contentInset.top;
+
+    }
+    
     if (y > 0) {
         
-        CGFloat newHeight = self.parallaxViewContainerRestingHeight - y;
+        CGFloat newHeight = MAX(self.minimumHeight, self.parallaxViewContainerRestingHeight - y);
         
         [self.parallaxContainerView setHidden:(newHeight <= 0)];
         
@@ -104,7 +119,7 @@
         
         [self.parallaxContainerView setHidden:NO];
         
-        CGFloat newHeight = self.parallaxViewContainerRestingHeight - y;
+        CGFloat newHeight = MAX(self.minimumHeight, self.parallaxViewContainerRestingHeight - y);
         
         [self parallaxViewContainerHeightWillChange:newHeight fromOldHeight:self.parallaxContainerViewHeightLayoutConstraint.constant];
         

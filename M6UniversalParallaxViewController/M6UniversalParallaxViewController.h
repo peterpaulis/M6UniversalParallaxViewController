@@ -16,6 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *parallaxContainerViewHeightLayoutConstraint;
 
+@property (nonatomic, assign) CGFloat minimumHeight;
+
 // overrride for additional functionality
 - (void)parallaxViewContainerHeightWillChange:(CGFloat)newHeight fromOldHeight:(CGFloat)height;
 
